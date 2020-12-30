@@ -1,0 +1,32 @@
+#Template:
+#<zone name>
+#<top_left_latitude,top_left_longitude>
+#<bottom_right_latitude,bottom_right_longitude>
+#
+#example:
+#------------ example -------------
+#Home
+#34.123,119.234 <- top left point
+#35.345,120.456 <- bottom right point
+#Work
+#37.123,121.234 <- top left point
+#38.345,123.456 <- bottom right point
+#----------------------------------
+#
+#notes: 1) parser will ignore lines that include '#' so add/remove '#' to
+#          enable/disable geo zones below
+#       2) reboot is required for geo zone data to be updated in OP
+#       3) this file must be located in data\params\d folder and be named
+#          'lbr_exclusion_zone'
+#       4) go to 'https://www.google.com/maps' and use slow double click to
+#          populate lat/lon in address bar for copy/paste.
+#
+
+#------------- start ------------#
+Home
+-71.726906, 19.043223
+-73.497074, 27.651597
+Work
+72.883133, -45.657614
+72.339832, -41.894601
+#------------- end --------------#
